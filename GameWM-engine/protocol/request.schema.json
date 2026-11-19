@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gamewm.engine-request.v1",
+  "title": "GameWM-engine to GameWM-VM request, v1",
+  "type": "object",
+  "required": ["schema", "assets", "take"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "gamewm.engine-request.v1"},
+    "model": {"enum": ["h3-33b", "wan2.2-5b", "wan2.2-14b"], "default": "h3-33b"},
+    "assets": {
+      "description": "Authored once per game or scene and reused by every take.",
+      "type": "object",
+      "required": ["first_frame", "scene", "character"],
+      "additionalProperties": false,
+      "properties": {
+        "first_frame": {"type": "string", "description": "<Picture 1>: scene concept art from the engine's opening camera view; same framing as proxy frame 0."},
+        "scene": {
+          "type": "object",
+          "required": ["setting", "lighting"],
+          "additionalProperties": false,
+          "properties": {
+            "medium": {"type": "string", "default": "A 3D video game"},
+            "setting": {"type": "string"},
+            "lighting": {"type": "string"}
+          }
+        },
+        "character": {
+          "type": "object",
+          "required": ["look"],
+          "additionalProperties": false,
+          "properties": {
+            "subject": {"enum": ["protagonist", "vehicle"], "default": "protagonist"},
+            "sheet": {"type": "string", "description": "<Picture 2>: identity sheet (front / profile / back). Optional."},
+            "look": {"type": "string", "description": "Noun phrase for the subject's appearance."},
+            "pronoun": {"enum": ["he", "she", "it", "they"], "default": "they", "description": "Fills {he} {him} {his} (and capitalised forms) in the action text."},
+            "skills": {
+              "type": "object",
+              "description": "Skill tree: engine mechanic -> how this character realizes it.",
+              "additionalProperties": {
+                "type": "object",
+                "required": ["name", "text"],
+                "additionalProperties": false,
+                "properties": {
+                  "name": {"type": "string"},
+                  "text": {"type": "string", "description": "Verb phrase, from the gesture that starts the skill to its effect on the target; {target} is replaced by the event target's entity text."},
+                  "again": {"type": "string", "description": "Shorter verb phrase for a repeat within the same caption. Default: text + ' again'."},
+                  "phases": {
+                    "type": "object",
+                    "description": "Optional sentence-level text per phase, used through {skill:<mechanic>.<phase>}: windup, release and recover are verb phrases of the character; travel, impact and decay (how the effect clears off the target) are clauses with their own subject. A missing impact falls back to text; name reads the skill name.",
+                    "propertyNames": {"enum": ["windup", "release", "travel", "impact", "decay", "recover"]},
+                    "additionalProperties": {"type": "string"}
+                  },
+                  "pose": {"type": "string", "description": "Engine-side gesture the proxy body plays for this skill (training ground: see games/training_ground/render.py POSES); the VM never reads it."},
+                  "kind": {"enum": ["projectile", "at_target"], "description": "Engine-side: whether the proxy shows the shot flying (projectile) or only its landing (at_target, e.g. lightning from the sky)."}
+                }
+              }
+            },
+            "moves": {
+              "type": "object",
+              "description": "How this character moves: kind -> verb phrase; kinds without an entry use the engine's plain phrase. walk_to and turn_to take {target}.",
+              "propertyNames": {"enum": ["walk", "walk_to", "back", "strafe_left", "strafe_right", "turn_left", "turn_right", "turn_to", "idle"]},
+              "additionalProperties": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "take": {
+      "description": "Produced by the engine at run time.",
+      "type": "object",
+      "required": ["proxy", "action"],
+      "additionalProperties": false,
+      "properties": {
+        "proxy": {
+          "type": "object",
+          "required": ["video", "modality"],
+          "additionalProperties": false,
+          "properties": {
+            "video": {"type": "string", "description": "<Video 1>: proxy rendered from the player camera, any fps (resampled to the model's fps)."},
+            "modality": {"enum": ["style", "depth", "semantic", "duv"]},
+            "kind": {"type": "string", "description": "Informational: capsule, lowpoly, voxel, blender, ..."},
+            "near_is_bright": {"type": "boolean", "default": true}
+          }
+        },
+        "seconds": {"type": "number", "exclusiveMinimum": 0, "description": "Trim the proxy to this length."},
+        "entities": {"type": "object", "additionalProperties": {"type": "string"}, "description": "Entity id -> noun phrase. 'player' is implicit."},
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["t", "mechanic", "actor"],
+            "additionalProperties": false,
+            "properties": {
+              "t": {"type": "number", "minimum": 0, "description": "Seconds from the take's first frame."},
+              "mechanic": {"type": "string"},
+              "actor": {"type": "string"},
+              "target": {"type": "string"},
+              "outcome": {"type": "string"},
+              "detail": {"type": "object", "description": "Engine-specific numbers (damage, hp, ...); not used in text."}
+            }
+          }
+        },
+        "action": {
+          "description": "What happens, one entry per segment or one shared by all. Placeholders: {skill:<mechanic>}, {skill:<mechanic>><entity>}, {target:<entity>}, {move:<kind>}, {move:<kind>><entity>}.",
+          "oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}, "minItems": 1}]
+        },
+        "camera": {"type": "string"}
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "steps": {"type": "integer", "minimum": 1, "maximum": 100, "default": 30},
+        "seed": {"type": "integer", "default": 0}
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "gamewm.engine-request.v1",
+  "model": "h3-33b",
+  "assets": {
+    "first_frame": "media/seg0162/first_frames/01_fire_mage.png",
+    "scene": {
+      "medium": "A 3D video game",
+      "setting": "a curving sandstone-paved road lined with orange-leaved autumn trees, low stone walls and street lamps",
+      "lighting": "Bright clear afternoon sunlight casts soft shadows across the paving"
+    },
+    "character": {
+      "subject": "protagonist",
+      "sheet": "media/seg0162/oc_sheets/01_fire_mage.jpg",
+      "look": "a young dark-haired man in a dark red leather coat with a crimson hood",
+      "skills": {
+        "melee_attack": {"name": "Flame Fist", "text": "swings a fist wreathed in flame that bursts against {target}"},
+        "ranged_attack": {"name": "Fireball", "text": "raises his right hand and hurls a fireball that bursts into flames on {target}"},
+        "dash": {"name": "Ember Dash", "text": "dashes forward in a streak of embers that scorch the ground behind him"}
+      }
+    }
+  },
+  "take": {
+    "proxy": {"video": "media/seg0162/proxy/capsule.mp4", "modality": "style", "kind": "capsule"},
+    "seconds": 5.17,
+    "entities": {"cultist": "the hooded cultist in a black robe"},
+    "events": [
+      {"t": 3.5, "mechanic": "ranged_attack", "actor": "player", "target": "cultist", "outcome": "hit"},
+      {"t": 4.0, "mechanic": "knockdown", "actor": "cultist", "outcome": "down"}
+    ],
+    "action": "walks down the road away from the camera, turns side-on and raises his right arm toward the opponent, then {skill:ranged_attack}; the cultist is hit and collapses onto the road and stays down",
+    "camera": "The camera follows from behind as the road bends to the right."
+  },
+  "generation": {"steps": 30, "seed": 0}
+}

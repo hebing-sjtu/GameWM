@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Blood Bolt",
+    "kind": "projectile",
+    "pose": "point",
+    "windup": "turns his shoulders side-on and raises his right hand at {target}, fingers spread as a glowing crimson orb condenses in his palm",
+    "release": "clenches his hand and the orb tears free as a blazing crimson bolt with a dark red core",
+    "travel": "the bolt streaks across the courtyard as a bright crimson line trailing glowing red mist",
+    "impact": "it bursts against {target} in a sharp crimson flash and a spray of glowing red droplets of light",
+    "decay": "the crimson glow vanishes in a split second, leaving {target} in clear view",
+    "again": "extends his hand again and casts another blazing crimson bolt that flashes against {target} and vanishes at once",
+    "text": "raises his hand at {target}, a crimson orb condensing in his palm, and casts a blazing blood bolt that bursts in a sharp crimson flash on it and vanishes at once"
+  },
+  "melee_attack": {
+    "name": "Blood Claw",
+    "pose": "claw",
+    "windup": "steps in and raises his clawed right hand high to the side, crimson light gathering along his fingertips",
+    "impact": "his claws rake down across {target}, leaving three glowing crimson streaks of light in the air",
+    "decay": "the crimson streaks fade at once",
+    "recover": "lowers his hand, his coat settling around him",
+    "again": "rakes {target} again with glowing crimson claws, three streaks of light that fade at once",
+    "text": "raises his clawed hand high and rakes it down across {target}, leaving three glowing crimson streaks of light that fade at once"
+  },
+  "dash": {
+    "name": "Mist Step",
+    "text": "dissolves into glowing crimson mist that rushes forward and re-forms into his body"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "game": "training_ground",
+  "sheet_pattern": "gamewm_oc_v2_{id}_held_turnaround.jpg",
+  "medium": "A 3D video game",
+  "characters": [
+    {
+      "id": "01_fire_mage",
+      "look": "a young dark-haired man in a dark red leather coat with a crimson hood holding a short wand",
+      "pronoun": "he",
+      "setting": "a walled sandstone training courtyard in an autumn old town with three wooden training dummies on round stands, stacked wooden crates and square sandstone pillars",
+      "lighting": "Bright clear afternoon sunlight casts soft shadows across the paving",
+      "props": "The walls become warm sandstone with orange ivy and fallen autumn leaves, the ground is sandstone paving, the three grey dummies become wooden training dummies with straw-stuffed sacking bodies on round wooden stands, the boxes become wooden crates and the tall blocks become sandstone pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Flame Fist",
+          "text": "draws back his flame-wrapped right fist and drives a burning punch into {target} in a shower of sparks",
+          "again": "throws another flaming punch into {target}",
+          "phases": {
+            "windup": "steps in and draws his right fist back, flames curling up around his knuckles",
+            "impact": "his burning fist crashes into {target} in a shower of sparks and embers",
+            "recover": "pulls his fist back and settles into a ready stance"
+          }
+        },
+        "ranged_attack": {
+          "name": "Fireball",
+          "text": "raises his wand to shoulder height at {target}, a flame gathering at its tip, and hurls a fireball that bursts into flames on it",
+          "again": "raises his wand again and hurls another fireball at {target}",
+          "phases": {
+            "windup": "plants his feet and raises his wand to shoulder height toward {target}, a flame flickering to life at its tip",
+            "release": "flicks the wand forward and a roaring fireball bursts from its tip",
+            "travel": "the fireball streaks across the courtyard trailing sparks and smoke",
+            "impact": "it explodes in a ball of orange flame against {target}"
+          }
+        },
+        "dash": {
+          "name": "Ember Dash",
+          "text": "dashes forward low in a streak of embers that scorch the ground"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with an easy stride, his free arm swinging and red coat flapping",
+        "back": "backs away with light, careful steps, wand held low",
+        "strafe_left": "sidesteps left in a loose, ready crouch",
+        "turn_to": "pivots on his heel to face {target}",
+        "idle": "stands loose and ready, the wand low in his right hand"
+      }
+    },
+    {
+      "id": "02_ice_mage",
+      "look": "a silver-haired woman in a white and blue fur-trimmed robe with a long blue cape holding an ice-crystal staff",
+      "pronoun": "she",
+      "setting": "a snow-covered walled stone training courtyard in a northern winter town with three wooden training dummies on round stands, frosted crates and square stone pillars hung with icicles",
+      "lighting": "Cold pale winter daylight lights the snow",
+      "props": "The walls become grey stone with snow on top and icicles, the ground is snow-dusted flagstones, the three grey dummies become wooden training dummies with frosted sacking bodies on round wooden stands, the boxes become frosted wooden crates and the tall blocks become stone pillars hung with icicles.",
+      "skills": {
+        "melee_attack": {
+          "name": "Frost Staff",
+          "text": "pulls her staff back and thrusts its crystal head into {target} in a burst of frost",
+          "again": "jabs her frosted staff into {target} again",
+          "phases": {
+            "windup": "steps in and pulls her staff back with both hands, its crystal glowing cold blue",
+            "impact": "the crystal head of her staff cracks into {target} in a burst of frost and ice",
+            "recover": "draws the staff back to her side, her cape settling"
+          }
+        },
+        "ranged_attack": {
+          "name": "Ice Shard",
+          "text": "levels her ice-crystal staff at {target} at shoulder height, frost swirling around its head, and fires an ice shard that shatters into frost on it",
+          "again": "levels her staff again and fires another ice shard at {target}",
+          "phases": {
+            "windup": "plants her feet and levels her ice-crystal staff at {target} at shoulder height, frost swirling around its crystal head",
+            "release": "snaps the staff forward and a jagged ice shard launches from its glowing crystal",
+            "travel": "the shard spins across the courtyard leaving a trail of glittering frost in the air",
+            "impact": "it shatters against {target} in a burst of ice crystals that frost its surface"
+          }
+        },
+        "dash": {
+          "name": "Frost Glide",
+          "text": "glides forward low on a trail of frost, her cape streaming behind her"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with a graceful stride through the snow, her blue cape swaying",
+        "back": "steps back through the snow, staff held across her body",
+        "strafe_left": "sidesteps left with light steps, her cape trailing",
+        "turn_to": "turns smoothly to face {target}, her cape swinging",
+        "idle": "stands poised, staff upright at her side, her cape stirring in the wind"
+      }
+    },
+    {
+      "id": "03_rifle_soldier",
+      "look": "a soldier in olive combat fatigues, a plate carrier vest and a helmet carrying an assault rifle",
+      "pronoun": "he",
+      "setting": "a walled concrete military training yard with three padded target dummies on round stands, stacked supply crates and square concrete pillars",
+      "lighting": "Flat grey overcast daylight lights the yard",
+      "props": "The walls become weathered concrete blast walls, the ground is cracked concrete with faded markings and puddles, the three grey dummies become padded olive target dummies on round steel stands, the boxes become stacked military supply crates and the tall blocks become concrete pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Rifle Butt",
+          "text": "draws his rifle back and drives the stock into {target} with a heavy thud",
+          "again": "slams the rifle stock into {target} again",
+          "phases": {
+            "windup": "steps in and draws his rifle back, gripping it with both hands",
+            "impact": "the rifle stock slams into {target} with a heavy thud",
+            "recover": "brings the rifle back across his chest"
+          }
+        },
+        "ranged_attack": {
+          "name": "Burst Fire",
+          "text": "shoulders his assault rifle and aims at {target}, firing a short burst with bright muzzle flashes that kicks dust off it",
+          "again": "shoulders his rifle again and fires another burst into {target}",
+          "phases": {
+            "windup": "plants his feet and brings his assault rifle up to his shoulder, aiming down the sights at {target}",
+            "release": "squeezes the trigger and the rifle kicks against his shoulder with bright muzzle flashes",
+            "travel": "a short burst of tracer rounds streaks across the yard",
+            "impact": "the rounds punch into {target}, kicking up puffs of dust and torn padding"
+          }
+        },
+        "dash": {
+          "name": "Combat Sprint",
+          "text": "breaks into a low combat sprint, boots kicking up dust"
+        }
+      },
+      "moves": {
+        "walk_to": "advances toward {target} in a steady tactical walk, rifle held low across his chest",
+        "back": "backs away in a crouched tactical step, rifle up",
+        "strafe_left": "side-steps left in a low crouch, rifle trained ahead",
+        "turn_to": "swings around to face {target}, rifle following his eyes",
+        "idle": "stands alert, rifle held low across his chest, scanning the yard"
+      }
+    },
+    {
+      "id": "04_dart_martial_artist",
+      "look": "a woman with a black ponytail in a long green coat with a leather waist corset",
+      "pronoun": "she",
+      "setting": "a walled training courtyard of an old East Asian martial arts school with whitewashed walls, tiled roof edges and red lanterns, three wooden training dummies on round stands, wooden crates and square red pillars",
+      "lighting": "Soft hazy morning daylight fills the misty courtyard",
+      "props": "The walls become whitewashed walls with grey tiled roof edges and red paper lanterns, the ground is grey stone paving, the three grey dummies become wooden wing-chun training dummies on round wooden stands, the boxes become wooden crates and the tall blocks become red lacquered pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Palm Strike",
+          "text": "draws her right hand back to her hip and shoots a fast open-palm strike into {target}",
+          "again": "lands another fast palm strike on {target}",
+          "phases": {
+            "windup": "steps in low and draws her right hand back to her hip, palm open",
+            "impact": "her open palm snaps into {target} with a sharp crack, her coat flaring with the blow",
+            "recover": "pulls her hand back into a guarded stance"
+          }
+        },
+        "ranged_attack": {
+          "name": "Steel Darts",
+          "text": "flicks her right hand back and snaps her arm straight out at {target}, throwing a fan of glinting silver darts that streak in bright lines into it",
+          "again": "snaps her arm out again, throwing more glinting darts into {target}",
+          "phases": {
+            "windup": "sets her feet and draws her right hand back past her shoulder, three steel darts glowing white-hot between her fingers",
+            "release": "snaps her arm straight out toward {target} and the darts leave her hand as three blazing white streaks of light",
+            "travel": "the three glowing darts shoot across the courtyard like tiny comets, leaving long bright white trails in the air",
+            "impact": "they slam into {target} in three bright bursts of white sparks and flying splinters"
+          }
+        },
+        "dash": {
+          "name": "Shadow Step",
+          "text": "darts forward in a blur, her green coat flaring and ponytail whipping behind her"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with light, springy steps, her green coat swishing and ponytail swaying",
+        "back": "slides back in a balanced stance, hands raised",
+        "strafe_left": "circles left on the balls of her feet, guard up",
+        "turn_to": "turns sharply to face {target}, settling into a fighting stance",
+        "idle": "stands in a relaxed ready stance, hands loose at her sides"
+      }
+    },
+    {
+      "id": "05_vampire",
+      "look": "a pale man with slicked black hair in a long high-collared crimson coat",
+      "pronoun": "he",
+      "setting": "a walled cobblestone courtyard of a gothic manor with three wooden training dummies on round stands, old wooden crates and square stone pillars",
+      "lighting": "Bright silvery overcast daylight lights the stones",
+      "props": "The walls become dark gothic stone with pointed arches and wrought iron, the ground is grey cobblestones, the three grey dummies become wooden training dummies with dark sacking bodies on round wooden stands, the boxes become old wooden crates and the tall blocks become carved stone pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Blood Claw",
+          "text": "draws back his clawed right hand and rakes {target} in a slash trailing crimson blood mist",
+          "again": "slashes {target} again with crimson-trailing claws",
+          "phases": {
+            "windup": "steps in and draws his clawed right hand back, crimson mist gathering around his fingers",
+            "impact": "his claws rake across {target}, leaving glowing red gashes and a trail of blood mist",
+            "recover": "lowers his hand, his coat settling around him"
+          }
+        },
+        "ranged_attack": {
+          "name": "Blood Bolt",
+          "text": "extends his right hand at {target}, crimson mist swirling around his fingers, and casts a glowing blood bolt that bursts in a red spray on it",
+          "again": "extends his hand again and casts another blood bolt at {target}",
+          "phases": {
+            "windup": "raises his right hand toward {target} at shoulder height, fingers spread as crimson mist coils around them",
+            "release": "clenches his hand and a glowing crimson blood bolt tears free from his palm",
+            "travel": "the bolt streaks across the courtyard leaving a trail of red mist",
+            "impact": "it bursts against {target} in a spray of crimson droplets"
+          }
+        },
+        "dash": {
+          "name": "Mist Step",
+          "text": "dissolves into crimson mist that rushes forward and re-forms into his body"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with a slow, elegant stride, his long crimson coat sweeping behind him",
+        "back": "drifts back with smooth, unhurried steps",
+        "strafe_left": "slides to the left with a smooth, predatory step",
+        "turn_to": "turns to face {target} with a cold, deliberate motion",
+        "idle": "stands perfectly upright, hands at his sides, his coat stirring slightly"
+      }
+    },
+    {
+      "id": "06_thunder_warrior",
+      "look": "a bearded man with braided hair in dark armour and a fur-collared blue cloak carrying a heavy war hammer",
+      "pronoun": "he",
+      "setting": "a walled flagstone training yard in a Norse village with round shields hung on the walls, three straw training dummies on round stands, wooden crates and square timber-and-stone pillars",
+      "lighting": "Bright sunlight after rain shines under a blue sky with white clouds",
+      "props": "The walls become stone-and-timber walls with round painted shields hung on them, the ground is wet flagstones, the three grey dummies become straw-wrapped training dummies on round wooden stands, the boxes become wooden crates and the tall blocks become carved timber-and-stone pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Thunder Hammer",
+          "text": "draws his war hammer back and swings it into {target} with a crack of blue lightning",
+          "again": "swings his crackling hammer into {target} again",
+          "phases": {
+            "windup": "steps in and draws his war hammer back with both hands, lightning crackling along it",
+            "impact": "the crackling hammer smashes into {target} with a thunderclap of blue lightning",
+            "recover": "swings the hammer back to his side, sparks fading"
+          }
+        },
+        "ranged_attack": {
+          "name": "Lightning Call",
+          "text": "thrusts his war hammer at {target} at shoulder height, sparks crackling along its head, and a jagged lightning bolt strikes down from the sky onto it",
+          "again": "points his hammer again and calls another lightning bolt down on {target}",
+          "phases": {
+            "windup": "plants his feet and thrusts his war hammer forward toward {target} at shoulder height, blue sparks crackling along its head",
+            "release": "raises the hammer as it flashes white, and the sky above {target} darkens with a rumble",
+            "travel": "a jagged lightning bolt splits the air and strikes straight down",
+            "impact": "it crashes onto {target} in a blinding white flash and a burst of crackling sparks"
+          }
+        },
+        "dash": {
+          "name": "Storm Charge",
+          "text": "charges forward with heavy pounding steps, blue lightning crackling around him"
+        }
+      },
+      "moves": {
+        "walk_to": "strides toward {target} with heavy, powerful steps, his fur-collared cloak swaying and hammer at his side",
+        "back": "steps back heavily, hammer held ready",
+        "strafe_left": "shifts left with heavy sideways steps, hammer ready",
+        "turn_to": "turns his broad shoulders to face {target}",
+        "idle": "stands broad and steady, the war hammer hanging from his right hand"
+      }
+    },
+    {
+      "id": "07_forest_druid",
+      "look": "a bearded red-haired man in a green leafy cloak holding a spiral wooden staff",
+      "pronoun": "he",
+      "setting": "a walled stone-paved training courtyard in a forest village with ivy-covered walls, three wooden training dummies on round stands, wooden crates and moss-covered square stone pillars",
+      "lighting": "Warm late-afternoon sunlight lights the courtyard",
+      "props": "The walls become old stone walls covered in ivy, the ground is mossy stone paving, the three grey dummies become wooden training dummies with woven-vine bodies on round wooden stands, the boxes become wooden crates and the tall blocks become moss-covered stone pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Thorn Staff",
+          "text": "pulls his spiral staff back and thrusts its thorn-wrapped head into {target} in a spray of leaves",
+          "again": "jabs his thorny staff into {target} again",
+          "phases": {
+            "windup": "steps in and pulls his spiral staff back, thorny vines curling around its head",
+            "impact": "the thorn-wrapped head of his staff jabs into {target} in a spray of leaves",
+            "recover": "brings the staff back upright beside him"
+          }
+        },
+        "ranged_attack": {
+          "name": "Thorn Bolt",
+          "text": "points his spiral staff at {target} at shoulder height, green light swirling at its tip, and launches a glowing thorn bolt that bursts into leaves on it",
+          "again": "points his staff again and launches another glowing thorn bolt at {target}",
+          "phases": {
+            "windup": "plants his feet and points his spiral staff at {target} at shoulder height, green light and leaves swirling around its tip",
+            "release": "thrusts the staff forward as its tip flares bright green and a bolt of thorns shoots out",
+            "travel": "the glowing thorn bolt spins across the courtyard shedding green leaves",
+            "impact": "it bursts against {target} in a spray of thorns, splinters and leaves"
+          }
+        },
+        "dash": {
+          "name": "Leaf Dash",
+          "text": "dashes forward in a swirl of green leaves"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with a calm, unhurried stride, his leafy cloak rustling and staff in hand",
+        "back": "steps back calmly, staff held upright",
+        "strafe_left": "steps to the left, his leafy cloak rustling",
+        "turn_to": "turns to face {target}, staff held upright",
+        "idle": "stands calmly, leaning lightly on his spiral staff"
+      }
+    },
+    {
+      "id": "08_arcane_sorceress",
+      "look": "a woman in a purple hooded robe over violet armour",
+      "pronoun": "she",
+      "setting": "a walled training courtyard in a crystal city with polished violet paving and glowing rune panels on the walls, three training dummies on round stands, crystal-trimmed crates and square violet pillars",
+      "lighting": "Soft bright purple twilight glows on the reflective pavement",
+      "props": "The walls become pale crystal-city walls with glowing violet rune panels, the ground is polished reflective violet paving, the three grey dummies become training dummies with silver armour plates on round crystal stands, the boxes become crystal-trimmed crates and the tall blocks become violet stone pillars.",
+      "skills": {
+        "melee_attack": {
+          "name": "Arcane Palm",
+          "text": "draws her glowing right hand back and thrusts her palm into {target} in a burst of violet light",
+          "again": "strikes {target} again with a glowing violet palm",
+          "phases": {
+            "windup": "steps in and draws her right hand back, her palm glowing violet",
+            "impact": "her glowing palm strikes {target} in a burst of arcane light",
+            "recover": "lowers her hand as the violet glow fades"
+          }
+        },
+        "ranged_attack": {
+          "name": "Arcane Bolt",
+          "text": "raises her right hand at {target} at shoulder height, a violet orb gathering in her palm, and fires a sparkling arcane bolt that bursts into violet light on it",
+          "again": "raises her glowing hand again and fires another arcane bolt at {target}",
+          "phases": {
+            "windup": "raises her right hand to shoulder height toward {target}, a glowing violet orb gathering in her palm",
+            "release": "pushes her palm forward and the orb launches as a bright violet arcane bolt",
+            "travel": "the bolt streaks across the courtyard trailing violet sparkles",
+            "impact": "it bursts against {target} in a flash of violet light and floating runes"
+          }
+        },
+        "dash": {
+          "name": "Blink",
+          "text": "blinks forward in a flash of violet light, leaving glowing runes behind her"
+        }
+      },
+      "moves": {
+        "walk_to": "walks toward {target} with a smooth, graceful stride, her purple robe flowing",
+        "back": "steps back gracefully, one hand faintly glowing",
+        "strafe_left": "glides to the left, her hood and robe swaying",
+        "turn_to": "turns gracefully to face {target}",
+        "idle": "stands calmly, a faint violet glow flickering around her fingers"
+      }
+    }
+  ]
+}

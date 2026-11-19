@@ -1,0 +1,21 @@
+{
+  "sheets": "sheets",
+  "cards": [
+    {"id": "01_fire_mage", "sheet": "gamewm_oc_v2_01_fire_mage_held_turnaround.jpg",
+     "brief": "a young fire mage; ranged Fireball, melee Flame Fist, dash Ember Dash"},
+    {"id": "02_ice_mage", "sheet": "gamewm_oc_v2_02_ice_mage_held_turnaround.jpg",
+     "brief": "an ice mage; ranged Ice Shard, melee Frost Staff, dash Frost Glide"},
+    {"id": "03_rifle_soldier", "sheet": "gamewm_oc_v2_03_rifle_soldier_held_turnaround.jpg",
+     "brief": "a modern rifle soldier; ranged Burst Fire, melee Rifle Butt, dash Combat Sprint"},
+    {"id": "04_dart_martial_artist", "sheet": "gamewm_oc_v2_04_dart_martial_artist_held_turnaround.jpg",
+     "brief": "a martial artist who throws darts; ranged Steel Darts, melee Palm Strike, dash Shadow Step"},
+    {"id": "05_vampire", "sheet": "gamewm_oc_v2_05_vampire_held_turnaround.jpg",
+     "brief": "a vampire noble; ranged Blood Bolt, melee Blood Claw, dash Mist Step"},
+    {"id": "06_thunder_warrior", "sheet": "gamewm_oc_v2_06_thunder_warrior_held_turnaround.jpg",
+     "brief": "a thunder warrior; ranged Lightning Call (lightning from the sky), melee Thunder Hammer, dash Storm Charge"},
+    {"id": "07_forest_druid", "sheet": "gamewm_oc_v2_07_forest_druid_held_turnaround.jpg",
+     "brief": "a forest druid; ranged Thorn Bolt, melee Thorn Staff, dash Leaf Dash"},
+    {"id": "08_arcane_sorceress", "sheet": "gamewm_oc_v2_08_arcane_sorceress_held_turnaround.jpg",
+     "brief": "an arcane sorceress; ranged Arcane Bolt, melee Arcane Palm, dash Blink"}
+  ]
+}

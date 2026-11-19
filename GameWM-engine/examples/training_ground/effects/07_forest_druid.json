@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Thorn Bolt",
+    "kind": "projectile",
+    "pose": "staff",
+    "windup": "plants his feet and levels his spiral staff at {target} with both hands, green light and swirling leaves gathering into a glowing thorn at its tip",
+    "release": "thrusts the staff forward and a blazing emerald-green thorn bolt shoots from its tip",
+    "travel": "the glowing thorn bolt spins across the courtyard as a bright green streak shedding tiny luminous leaves",
+    "impact": "it bursts against {target} in a sharp green-gold flash and a spray of glowing thorns and leaves",
+    "decay": "the green light and leaves vanish in a split second, leaving {target} clear",
+    "again": "levels his staff again and launches another glowing green thorn bolt that bursts in a bright flash against {target} and vanishes at once",
+    "text": "levels his spiral staff at {target}, green light swirling at its tip, and launches a glowing thorn bolt that bursts in a bright green flash on it and vanishes at once"
+  },
+  "melee_attack": {
+    "name": "Thorn Staff",
+    "pose": "thrust",
+    "windup": "steps in and pulls his spiral staff back with both hands, glowing green thorny vines curling around its head",
+    "impact": "the thorn-wrapped head jabs into {target} in a bright green flash and a spray of glowing leaves",
+    "decay": "the green glow fades at once",
+    "recover": "brings the staff back upright beside him",
+    "again": "jabs his thorny staff into {target} again in a bright green flash that fades at once",
+    "text": "pulls his spiral staff back and thrusts its thorn-wrapped head into {target} in a bright green flash of leaves that fades at once"
+  },
+  "dash": {
+    "name": "Leaf Dash",
+    "text": "dashes forward in a swirl of glowing green leaves"
+  }
+}

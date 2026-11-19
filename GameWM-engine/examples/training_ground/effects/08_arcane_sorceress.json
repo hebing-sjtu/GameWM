@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Arcane Bolt",
+    "kind": "projectile",
+    "pose": "push",
+    "windup": "plants her feet and draws both hands to her chest toward {target}, a glowing violet orb with rings of tiny runes forming between her palms",
+    "release": "pushes both palms out and the orb launches as a blazing violet arcane bolt with a white core",
+    "travel": "the bolt streaks across the courtyard as a bright violet line trailing sparkling runes of light",
+    "impact": "it bursts against {target} in a sharp violet flash and a ring of glowing silver runes",
+    "decay": "the runes and violet light vanish in an instant, leaving {target} clear",
+    "again": "pushes her palms out again and fires another blazing violet bolt that flashes against {target} and vanishes at once",
+    "text": "gathers a violet orb between her palms and pushes it out at {target} as a blazing arcane bolt that bursts in a sharp violet flash on it and vanishes at once"
+  },
+  "melee_attack": {
+    "name": "Arcane Palm",
+    "pose": "palm",
+    "windup": "steps in and draws her right hand back to her hip, her palm glowing bright violet",
+    "impact": "her glowing palm strikes {target} in a sharp burst of violet light and spinning silver runes",
+    "decay": "the violet light fades at once",
+    "recover": "lowers her hand as the last glow fades",
+    "again": "strikes {target} again with a glowing violet palm in a burst of light that fades at once",
+    "text": "draws her glowing hand back and thrusts her palm into {target} in a sharp burst of violet light that fades at once"
+  },
+  "dash": {
+    "name": "Blink",
+    "text": "blinks forward in a flash of violet light, leaving glowing runes behind her"
+  }
+}

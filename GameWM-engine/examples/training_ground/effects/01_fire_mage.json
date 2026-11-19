@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Fireball",
+    "kind": "projectile",
+    "pose": "point",
+    "windup": "plants his feet, turns his shoulders side-on and raises his wand at {target}, a tight knot of orange flame swirling and brightening at its tip",
+    "release": "flicks the wand forward and a blazing orange fireball with a white-hot core bursts from its tip",
+    "travel": "the fireball streaks across the courtyard as a bright orange comet trailing sparks and a ribbon of flame",
+    "impact": "it explodes against {target} in a sharp orange-yellow flash and a burst of glowing embers",
+    "decay": "the flames shrink and vanish in a split second, leaving {target} in clear view",
+    "again": "raises his wand again and hurls another blazing orange fireball that explodes in a bright flash against {target} and vanishes at once",
+    "text": "raises his wand at {target}, orange flame gathering at its tip, and hurls a blazing fireball that explodes in a bright orange flash on it and vanishes at once"
+  },
+  "melee_attack": {
+    "name": "Flame Fist",
+    "pose": "punch",
+    "windup": "steps in, twists his hips and draws his right fist back to his side, bright orange flames curling up around his knuckles",
+    "impact": "his blazing fist crashes into {target} in a sharp orange flash and a spray of glowing sparks",
+    "decay": "the flames on his fist die out at once",
+    "recover": "pulls his fist back and settles into a ready stance",
+    "again": "drives another blazing fist into {target} in a bright orange flash that dies out at once",
+    "text": "draws back his flame-wrapped fist and drives a blazing punch into {target} in a bright orange flash that dies out at once"
+  },
+  "dash": {
+    "name": "Ember Dash",
+    "text": "dashes forward low in a streak of glowing orange embers that scorch the paving"
+  }
+}

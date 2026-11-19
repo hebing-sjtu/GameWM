@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Steel Darts",
+    "kind": "projectile",
+    "pose": "throw",
+    "windup": "sets her feet, turns her shoulders and cocks her right hand back above her shoulder at {target}, three steel darts glowing white-hot between her fingers",
+    "release": "snaps her arm forward and the darts leave her hand as three blazing white streaks of light",
+    "travel": "the three glowing darts shoot across the courtyard like tiny comets, leaving long bright white trails",
+    "impact": "they slam into {target} in three bright bursts of white sparks and flying splinters",
+    "decay": "the white sparks vanish in an instant, leaving {target} clear",
+    "again": "snaps her arm forward again and throws three more blazing white darts that burst into sparks against {target} and vanish at once",
+    "text": "cocks her hand back and snaps her arm out at {target}, throwing three white-hot darts that streak like tiny comets and burst into bright white sparks on it that vanish at once"
+  },
+  "melee_attack": {
+    "name": "Palm Strike",
+    "pose": "palm",
+    "windup": "steps in low and draws her right hand back to her hip, palm open and glowing faint jade green",
+    "impact": "her glowing palm snaps into {target} with a sharp crack and a bright ring of jade-green light, her coat flaring",
+    "decay": "the jade light fades at once",
+    "recover": "pulls her hand back into a guarded stance",
+    "again": "lands another fast palm strike on {target} in a bright ring of jade-green light that fades at once",
+    "text": "draws her hand back to her hip and shoots a fast open-palm strike into {target} in a bright ring of jade-green light that fades at once"
+  },
+  "dash": {
+    "name": "Shadow Step",
+    "text": "darts forward in a blur, her green coat flaring and a faint glowing trail behind her"
+  }
+}

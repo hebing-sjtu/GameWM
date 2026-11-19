@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Ice Shard",
+    "kind": "projectile",
+    "pose": "staff",
+    "windup": "plants her feet and levels her staff at {target} with both hands, three long ice shards forming around its crystal and glowing cold blue",
+    "release": "sweeps the staff forward and the three shards shoot out as bright blue-white streaks of light",
+    "travel": "the glowing shards fly point-first across the courtyard, each trailing a thin line of glittering frost",
+    "impact": "they shatter against {target} in a sharp icy-blue flash and a spray of sparkling white ice crystals",
+    "decay": "the ice crystals vanish in an instant, leaving {target} clear",
+    "again": "levels her staff again and fires three more glowing blue shards that shatter in a bright flash against {target} and vanish at once",
+    "text": "levels her ice-crystal staff at {target}, frost swirling around its head, and fires three glowing blue ice shards that shatter in a bright flash on it and vanish at once"
+  },
+  "melee_attack": {
+    "name": "Frost Staff",
+    "pose": "thrust",
+    "windup": "steps in and pulls her staff back with both hands, its crystal head flaring cold blue",
+    "impact": "the glowing crystal head cracks into {target} in a bright blue flash and a burst of white frost",
+    "decay": "the frost glow fades at once",
+    "recover": "draws the staff back to her side, her cape settling",
+    "again": "jabs her glowing staff into {target} again in a bright blue flash that fades at once",
+    "text": "thrusts her ice-crystal staff into {target} in a bright blue flash of frost that fades at once"
+  },
+  "dash": {
+    "name": "Frost Glide",
+    "text": "glides forward low on a trail of glowing blue frost, her cape streaming behind her"
+  }
+}

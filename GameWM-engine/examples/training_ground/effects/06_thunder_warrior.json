@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Lightning Call",
+    "kind": "at_target",
+    "pose": "overhead",
+    "windup": "plants his feet, glares at {target} and raises his war hammer high to the sky with both hands, blue sparks crackling along its head",
+    "release": "brings the hammer down to point at {target} as its head flashes bright blue-white",
+    "travel": "a jagged branching bolt of blue-white lightning splits the sky and strikes straight down onto {target}",
+    "impact": "it crashes onto {target} in a blinding white flash and a ring of crackling blue sparks across the ground",
+    "decay": "the lightning vanishes in an instant, leaving {target} in plain view",
+    "again": "raises his hammer again and calls down another jagged blue-white lightning bolt that flashes onto {target} and vanishes at once",
+    "text": "raises his war hammer to the sky, blue sparks crackling along its head, and calls a jagged blue-white lightning bolt down onto {target} in a blinding flash that vanishes at once"
+  },
+  "melee_attack": {
+    "name": "Thunder Hammer",
+    "pose": "overhead",
+    "windup": "steps in and heaves his war hammer up over his head with both hands, blue lightning crackling along its head",
+    "impact": "the hammer slams down into {target} with a thunderclap and a blinding blue-white burst of forked lightning",
+    "decay": "the lightning dies away at once",
+    "recover": "swings the hammer back to his side as the last sparks fade",
+    "again": "slams his crackling hammer into {target} again in a blinding blue-white burst that dies away at once",
+    "text": "heaves his war hammer overhead and slams it into {target} with a thunderclap of blinding blue-white lightning that dies away at once"
+  },
+  "dash": {
+    "name": "Storm Charge",
+    "text": "charges forward with heavy pounding steps, bright blue lightning crackling around him"
+  }
+}

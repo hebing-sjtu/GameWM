@@ -1,0 +1,28 @@
+{
+  "ranged_attack": {
+    "name": "Burst Fire",
+    "kind": "projectile",
+    "pose": "rifle",
+    "windup": "plants his feet, shoulders his assault rifle with both hands and aims down the sights at {target}, his cheek pressed to the stock",
+    "release": "squeezes the trigger and the rifle kicks against his shoulder in bright yellow-white muzzle flashes",
+    "travel": "three glowing orange tracer rounds streak across the yard as thin bright lines of light",
+    "impact": "the tracers punch into {target} in three sharp orange sparks and puffs of dust and torn padding",
+    "decay": "the sparks and dust clear in a split second, leaving {target} in plain view",
+    "again": "fires another burst of glowing orange tracers that spark against {target} and clear at once",
+    "text": "shoulders his assault rifle at {target} and fires a short burst with bright muzzle flashes, glowing orange tracers sparking on it in puffs of dust that clear at once"
+  },
+  "melee_attack": {
+    "name": "Rifle Butt",
+    "pose": "thrust",
+    "windup": "steps in and draws his rifle back with both hands, twisting his shoulders to load the blow",
+    "impact": "the rifle stock slams into {target} with a heavy thud and a burst of bright orange sparks and dust",
+    "decay": "the sparks wink out at once",
+    "recover": "brings the rifle back across his chest",
+    "again": "slams the rifle stock into {target} again in a burst of bright orange sparks that wink out at once",
+    "text": "draws his rifle back and drives the stock into {target} with a heavy thud and a burst of bright orange sparks that wink out at once"
+  },
+  "dash": {
+    "name": "Combat Sprint",
+    "text": "breaks into a low combat sprint, boots kicking up dust and small glowing sparks from the concrete"
+  }
+}

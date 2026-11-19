@@ -1,0 +1,3 @@
+[submodule "GameWM-VM/data-engine"]
+	path = GameWM-VM/data-engine
+	url = https://github.com/Enderfga/solar-wm-data.git

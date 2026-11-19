@@ -1,0 +1,61 @@
+{
+  "card": {
+    "id": "09_sand_sorcerer",
+    "brief": "a desert sorcerer with a bronze sceptre; ranged Sun Lance, melee Dune Strike, dash Sand Step"
+  },
+  "entry": {
+    "id": "09_sand_sorcerer",
+    "look": "a lean dark-skinned man with a short black beard in a sand-coloured hooded robe over a bronze breastplate, holding a bronze sun sceptre",
+    "pronoun": "he",
+    "setting": "a walled sandstone training courtyard of a desert fortress with striped awnings on the walls, three wooden training dummies on round stands, woven-reed crates and square sandstone pillars",
+    "lighting": "Hot golden afternoon sunlight casts sharp shadows across the sand-dusted paving",
+    "props": "The walls become tall sandstone walls with striped cloth awnings, the ground is sand-dusted sandstone paving, the three grey dummies become wooden training dummies with linen-wrapped bodies on round wooden stands, the boxes become woven-reed crates and the tall blocks become square sandstone pillars.",
+    "skills": {
+      "ranged_attack": {
+        "name": "Sun Lance",
+        "text": "raises his bronze sceptre at {target}, golden light gathering at its head, and fires a blazing golden lance that bursts in a sharp flash on it and vanishes at once",
+        "again": "swings the sceptre up again and fires another blazing golden lance that flashes against {target} and vanishes at once",
+        "phases": {
+          "windup": "plants his feet, turns his shoulders side-on and raises the bronze sceptre at {target}, a small sun of golden light gathering at its head",
+          "release": "snaps the sceptre forward and a blazing golden lance of light shoots from its head",
+          "travel": "the lance streaks across the courtyard as a bright white-gold line trailing shimmering heat",
+          "impact": "it bursts against {target} in a sharp golden flash and a ring of glowing sand",
+          "decay": "the golden light vanishes in a split second, leaving {target} in plain view"
+        },
+        "pose": "point",
+        "kind": "projectile"
+      },
+      "melee_attack": {
+        "name": "Dune Strike",
+        "text": "swings his glowing sceptre into {target} in a bright arc of amber light that fades at once",
+        "again": "sweeps the glowing sceptre into {target} again in a bright amber arc that fades at once",
+        "phases": {
+          "windup": "steps in and swings the sceptre wide behind his shoulder, its head glowing amber",
+          "impact": "the glowing sceptre sweeps into {target} in a bright arc of amber light and a spray of sand",
+          "decay": "the amber arc fades at once",
+          "recover": "brings the sceptre back across his body"
+        },
+        "pose": "swing"
+      },
+      "dash": {
+        "name": "Sand Step",
+        "text": "dashes forward low in a swirl of glowing golden sand",
+        "phases": {
+          "decay": "the glowing sand drifts down behind him and settles on the paving",
+          "recover": "slides to a stop, his hooded robe settling around him"
+        }
+      }
+    },
+    "moves": {
+      "walk": "walks forward with a measured stride, his robe swaying and sceptre in hand",
+      "walk_to": "walks toward {target} with a measured stride, his robe swaying and sceptre in hand",
+      "back": "steps back with the sceptre held across his body",
+      "strafe_left": "sidesteps to the left, his robe hem sweeping the sand",
+      "strafe_right": "sidesteps to the right, his robe hem sweeping the sand",
+      "turn_left": "turns to his left, sceptre held upright",
+      "turn_right": "turns to his right, sceptre held upright",
+      "turn_to": "turns to face {target}, sceptre held upright",
+      "idle": "stands tall, the bronze sceptre planted at his side"
+    }
+  }
+}
