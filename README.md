@@ -16,7 +16,7 @@ Tao Zhuang &nbsp; Yuxuan Xie &nbsp; Zhongyuan Liu<sup>‡</sup>
 
 <p>
   <a href="https://arxiv.org/abs/2611.19247"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2611.19247-B31B1B?logo=arxiv&amp;logoColor=white&amp;labelColor=555"></a>
-  <a href="https://hebing-sjtu.github.io/GameWM-website/"><img alt="Project page" src="https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&amp;logoColor=white&amp;labelColor=555"></a>
+  <a href="https://game-world-model.github.io/"><img alt="Project page" src="https://img.shields.io/badge/Project-Page-4285F4?logo=googlechrome&amp;logoColor=white&amp;labelColor=555"></a>
   <a href="https://huggingface.co/binghe-sjtu/GameWM"><img alt="Model weights" src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-Weights-FFD21E?labelColor=555"></a>
 </p>
 
