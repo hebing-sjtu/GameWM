@@ -54,17 +54,18 @@ git clone --recurse-submodules https://github.com/hebing-sjtu/GameWM.git
 ## Weights
 
 All weights are in one Hugging Face repository,
-[binghe-sjtu/GameWM](https://huggingface.co/binghe-sjtu/GameWM), one folder per model and one
-subfolder per training stage, named as in the paper. Backbones are downloaded separately.
+[binghe-sjtu/GameWM](https://huggingface.co/binghe-sjtu/GameWM), one folder per model. The
+bidirectional (BD) models are released; the causal AR and DMD students are not released yet.
+Backbones are downloaded separately.
 
 | Model | Variants | Backbone | License |
 |---|---|---|---|
-| [GameWM-H3-33B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-H3-33B) | BD, AR, DMD, BD-Sheet, AR-Sheet, DMD-Sheet | [MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) | MiniMax H3 Community License (territory restricted) |
-| [GameWM-Wan2.2-14B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-Wan2.2-14B) | BD, BD-Sheet, AR-Sheet, DMD-Sheet | [Wan2.2-I2V-A14B](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B) | Apache-2.0 |
-| [GameWM-Wan2.2-5B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-Wan2.2-5B) | BD, BD-Sheet, AR-Sheet, DMD-Sheet | [Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B) | Apache-2.0 |
+| [GameWM-H3-33B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-H3-33B) | BD, BD-Sheet | [MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) | MiniMax H3 Community License (territory restricted) |
+| [GameWM-Wan2.2-14B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-Wan2.2-14B) | BD, BD-Sheet | [Wan2.2-I2V-A14B](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B) | Apache-2.0 |
+| [GameWM-Wan2.2-5B](https://huggingface.co/binghe-sjtu/GameWM/tree/main/GameWM-Wan2.2-5B) | BD, BD-Sheet | [Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B) | Apache-2.0 |
 
 ```bash
-hf download binghe-sjtu/GameWM --include "GameWM-Wan2.2-5B/DMD-Sheet/*" --local-dir GameWM-weights
+hf download binghe-sjtu/GameWM --include "GameWM-Wan2.2-5B/BD-Sheet/*" --local-dir GameWM-weights
 ```
 
 Inference commands for each model are in the
